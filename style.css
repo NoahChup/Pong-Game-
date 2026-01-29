@@ -1,0 +1,34 @@
+/* Basic layout and styles for simple Pong */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html,body { height: 100%; font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background: #0b1220; color: #e6eef8; display: flex; align-items: center; justify-content: center; }
+
+.container { text-align: center; }
+.scoreboard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 28px;
+  user-select: none;
+}
+.score { width: 48px; text-align: center; background: rgba(255,255,255,0.04); padding: 6px 10px; border-radius: 6px; }
+.dash { font-size: 22px; opacity: 0.7; }
+
+canvas {
+  background: linear-gradient(180deg,#061022,#08152a);
+  border-radius: 8px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.02);
+  display: block;
+  margin: 0 auto;
+  cursor: none; /* hide default cursor for a more arcade feel */
+}
+
+/* Tiny instruction text */
+.instructions {
+  margin-top: 10px;
+  color: #bcd3f0;
+  font-size: 13px;
+  opacity: 0.9;
+}
